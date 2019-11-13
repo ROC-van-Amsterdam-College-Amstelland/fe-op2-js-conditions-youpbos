@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href= "Code%20opdracht%202/style.css">
+    <title>streaming</title>
+</head>
+<body>
+    <header>
+        Deze tool bepaalt welke streaming abonnement het beste bij jou past/
+        Er zijn 4 type abonnementen
+        <ul>
+            <li>eenvoudig</li>
+            <li>standaard</li>
+            <li>uitgebreid</li>
+            <li>familie</li>
+        </ul>
+        Vul het onderstaand formulier in en zie wat het beste bij jou past
+    </header>
+    <main>
+        <div>
+            <label>hoeveel gezinsleden gaan er gebruik maken van deze dienst? </label>
+            <select id="aantal">
+                <option value=""></option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>>2</option>
+            </select>
+            <label>hoeveel uur per dag denk je te gaan kijken?</label>
+            <input type=number id="duur">
+            <label>maak je nu ook gebruik van een streamingsdienst?</label>
+            <select id="streaming">
+                <option value=""></option>
+                <option value=true>ja</option>
+                <option value=false>nee</option>
+            </select>
+            <button onclick="zoekUit()">resultaat</button>
+    </div>
+    <div>Het beste abonnement is <span id="resultaat">??????</span></div>
+    </main>
+
+    <script src="Code%20opdracht%202/script.js"></script>
+</body>
+</html>
